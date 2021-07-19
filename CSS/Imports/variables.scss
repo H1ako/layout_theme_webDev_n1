@@ -1,0 +1,153 @@
+// ===Common===
+$color-bg: white;
+$color-text: black;
+$color-button: #00897b;
+$fontSize-button: 20px;
+$fontSize-block-title: 30px;  //Open Sans Bold
+$fontSize-block-subtitle: 15px;  //Open Sans
+$animationTime: .5s;
+@mixin fontOpenSans{
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin fontRobotoBold{
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin fontOpenSansSemiBold{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+@mixin blockTitle{
+    text-align: center;
+    @include fontOpenSansSemiBold;
+    font-size: $fontSize-block-title;
+}
+
+@mixin blockSubtitle{
+    margin-top: 40px;
+    text-align: center;
+    @include fontOpenSans;
+    font-size: $fontSize-block-subtitle;
+    width: 630px;
+    max-width: 80%;
+}
+
+@mixin filledButtonEffect($color){
+    background: darken($color, 10%);
+}
+
+@mixin emptyButtonEffect{
+    background: $color-button;
+    color: white;
+}
+
+@mixin transitionGeneral($time){
+    transition: all $time ease;
+}
+
+// ==Adaptive Sizes==
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
+$screen-sx-max: 575px;
+$screen-sm-max: 767px;
+$screen-md-max: 991px;
+$screen-lg-max: 1199;
+// ==/Adaptive Sizes==
+// ===/Common===
+
+// ===Header===
+// ==Color==
+$color-header-text: white;
+// ==/Color==
+
+// ==Animation time==
+// ==/Animation time==
+
+// ==Font==
+$fontSize-header-title: 60px;
+$fontSize-header-subtitle: 22px;
+$fontSize-header-nav: 20px;
+$fontSize-header-logo: 25px;
+// ==/Font==
+
+// ==Button==
+@mixin buttonHeader{
+    flex-basis: 220px;
+    height: 70px;
+    outline: none;
+    text-decoration: none;
+    font-size: 20px;
+    color: $color-header-text;
+    @include fontRobotoBold;
+    @media (max-width: $screen-sx-max){
+
+    }
+}
+// ==/Button==
+// ===/Header===
+
+// ===About===
+$fontSize-about-feature-title: 20px; //Open Sans Bold
+$fontSize-about-feature-subtitle: 15px;  //Open Sans
+// ===/About===
+
+// ===Services===
+$color-services-bg: #e4fdf9;
+$color-services-service-bg: white;
+$color-services-service-bg-hover: #00897b;
+$color-services-service-title: black;
+$color-services-service-subtitle: black;
+$color-services-service-btn: black;
+
+$fontSize-services-feature-title: 20px; //Open Sans Bold
+$fontSize-services-feature-subtitle: 15px;  //Open Sans
+$fontSize-services-service-title: 20px; //Open Sans Bold
+$fontSize-services-service-subtitle: 15px;  //Open Sans
+// ===/Services===
+
+// ===Works===
+$color-works-btn: white;
+$fontSize-works-work-title: 20px;
+$fontSize-works-work-subtitle: 15px;
+// ===/Works===
+
+// ===Pricing Plan===
+$color-pricePlan-bg: #f0f1f1;
+$color-pricePlan-plan-header: #3949ab;
+$color-pricePlan-plan-main: white;
+$color-pricePlan-plan-feature-text: black;
+$fontSize-pricePlan-title: 25px;
+$fontSize-pricePlan-price: 50px;
+$fontSize-pricePlan-price-date-and-cur: 17px;
+$fontSize-pricePlan-feature-text: 17px;
+// ===/Pricing Plan===
+
+// ===Footer===
+$fontSize-footer-text: 20px;
+// ===/Footer===
+
+// ===Team===
+$color-team-soc_net-bg: #f0f1f1;
+$color-team-bg: white;
+$fontSize-team-member-name: 20px;
+$fontSize-team-member-occupation: 15px;
+// ===/Team===
+
+// ===Blog===
+$color-blog-bg: #e4fdf9;
+
+$fontSize-blog-article-title: 25px;
+$fontSize-blog-article-date: 17px;
+$fontSize-blog-article-direction: 17px;
+$fontSize-blog-article-subtitle: 15px;
+// ===/Blog===
+
+// ===Contact===
+$color-contact-info_part-bg: #3949ab;
+$fontSize-contact-info_part: 20px;
+// ===/Contact===
